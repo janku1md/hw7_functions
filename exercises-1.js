@@ -21,7 +21,13 @@ function max(a, b){
 
 function maxOfThree(){
     "use strict";
-    //...
+    if(a > b) {
+      return a;
+    } else if (b > c) {
+      return b;
+    } else if (c > a) {
+      return c;
+    }
 }
 
 // ---------------------
@@ -30,7 +36,18 @@ function maxOfThree(){
 
 function isVowel(char){
     "use strict";
-    //...
+    var char = 'aeiouAEIOU';
+    var vowel = words.match(/\w[a-z]{0,}/gi);
+    var result = vowel;
+
+    for(var i = 0 ; i < vowel ; i++)
+    {
+      if(vowel >= 1)
+      {
+        document.write("let me buy a vowel alex");
+      }
+    }
+    return result;
 }
 
 // ---------------------
@@ -39,7 +56,12 @@ function isVowel(char){
 
 function rovarspraket(phrase){
     "use strict";
-    //...
+  var consonant = 'bcdfghjklmnpqrstvwxyz'
+  for(var i = 0 ; i < vowel ; i++)
+    numbers.forEach(function(consonant){
+    consonant = letter;
+  });
+  return consonant + consonant + 'o';
 }
 
 // ---------------------
@@ -48,28 +70,34 @@ function rovarspraket(phrase){
 
 function sum(){
     "use strict";
-    var sum - 0;
+    var sum = 0;
     numbers.forEach(function(num){
       sum += num;
     });
     return sum;
 }
 
-console.assert(sum[5, 10, 20, 100]) == 135, 'sum');
 
 function multiply(){
     "use strict";
-    //...
+    var sum = 0;
+    numbers.forEach(function(num){
+      sum *= num;
+    });
+    return sum;
 }
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
+function reverseWord(w){
     "use strict";
-    //...
+    w = w + "";
+    return w.split("").reverse().join("");
 }
+
+
 
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
@@ -77,9 +105,18 @@ function reverse(){
 
 function findLongestWord(words){
     "use strict";
-    //...
-}
+  var long = words.match(long[i]);
+  var result = array1[0];
 
+  for(var i = 1 ; i < long.length ; i++)
+  {
+    if(result.length < long[i].length)
+    {
+      result = long[i];
+    }
+  }
+  return result;
+}
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
